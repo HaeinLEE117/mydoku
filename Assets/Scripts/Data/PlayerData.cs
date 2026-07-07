@@ -26,20 +26,17 @@ public class PlayerData
     }
 }
 
-// TODO: 기획에 맞게 LevelInfo 클래스에 필요한 정보 추가
 [Serializable]
 public class LevelInfo
 {
     public bool isCleared;
     public int stars;
-    public float bestTime;
     public int attempts;
 
     public LevelInfo()
     {
         isCleared = false;
         stars = 0;
-        bestTime = 0f;
         attempts = 0;
     }
 }
