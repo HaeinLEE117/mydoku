@@ -172,12 +172,6 @@ public class GameManager : Singleton<GameManager>
                 info.stars = stars;
             }
 
-            // 더 빠른 시간이라면 업데이트
-            if (info.bestTime == 0f || clearTime < info.bestTime)
-            {
-                info.bestTime = clearTime;
-            }
-
             // 다음 레벨 언락
             UnlockLevel(levelNumber + 1);
 
